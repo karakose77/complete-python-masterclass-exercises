@@ -1,4 +1,4 @@
-def cleanNumber(numberString):
+def clean_number(numberString):
     """
     Cleans non-numeric characters from entered string and converts and returns the new number.
     """
@@ -11,4 +11,4 @@ def cleanNumber(numberString):
     return int(cleanedNumberString)
 
 
-print(cleanNumber("9,223,372,036,854,775,807"))
+print(clean_number("9,223,372,036,854,775,807"))
