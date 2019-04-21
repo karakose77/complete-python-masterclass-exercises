@@ -11,3 +11,4 @@ Includes my exercise solutions and projects from complete python bootcamp online
 3. **"mk003-IP_divider.py"**: Divides IP number segments and return seperate segments with its lengths.
 4. **"mk004-reaction_game.py"**: A game measuring the players reaction time in seconds.
 5. **"mk005-account_object.py"**: A simple Account class with balance, deposit an withdraw. It also displays the transaction logs.
+6. **"mk006-account_decimal.py"**: A simple Account class with balance, deposit and withdraw with decimals.
