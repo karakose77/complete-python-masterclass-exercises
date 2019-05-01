@@ -4,8 +4,8 @@ import pytz
 
 class Account:
     """
-    A simple Account class with balance, deposit and withdraw.
-    It also displays the transaction logs.
+    A simple Account class with methods balance, deposit
+    and withdraw. It also displays the transaction logs.
     """
     @staticmethod
     def _current_time():
