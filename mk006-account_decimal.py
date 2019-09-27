@@ -28,20 +28,17 @@ class Account(object):
             print(f"{decimal_amount} withdrawn.")
             return decimal_amount
         else:
-            print("The amount must be greater than zero"
-                  " and no more than your account balance.")
+            print("The amount must be greater than zero and no more than your account balance.")
             return Account._qb
 
     def show_balance(self):
         print(f"Balance on account {self.name} is {self._balance}.")
 
 
-if __name__ == "__main__":
-    mustafa = Account("Mustafa")
-    mustafa.deposit(10.10)
-    mustafa.deposit(0.10)
-    mustafa.deposit(0.10)
-    mustafa.withdraw(0.30)
-    mustafa.withdraw(0.00)
-    mustafa.show_balance()
-    print(mustafa.log)
+mustafa = Account("Mustafa")
+mustafa.deposit(10.10)
+mustafa.deposit(0.10)
+mustafa.deposit(0.10)
+mustafa.withdraw(0.30)
+mustafa.withdraw(0.00)
+mustafa.show_balance()

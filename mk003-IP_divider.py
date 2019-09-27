@@ -1,6 +1,6 @@
-def IP_divider():
+def ip_divider():
     """
-    Divides IP number segments and return seperate segments with its lengths.
+    Divides IP number segments and return separate segments with its lengths.
     """
     ip_address = input("Please enter the IP address: ")
     ip_address_dot = ip_address + "."
@@ -21,4 +21,4 @@ def IP_divider():
     return ip_segments
 
 
-print(IP_divider())
+ip_divider()
