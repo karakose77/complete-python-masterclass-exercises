@@ -7,7 +7,6 @@ def ip_divider():
     segment = ""
     ip_segments = []
     print("")
-
     for char in ip_address_dot:
         if char != ".":
             segment += char
@@ -16,7 +15,6 @@ def ip_divider():
             ip_segments.append(len(segment))
             print(f"Segment {segment:3} contains {len(segment)} characters.")
             segment = ""
-
     print("")
     return ip_segments
 

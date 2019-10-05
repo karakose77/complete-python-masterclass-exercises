@@ -7,21 +7,21 @@ def guess_right():
     After the player guessed correctly the function returns the guess count.
     """
     highest = int(input("Enter the highest limit for the guessing game?: "))
-    num = randint(1, highest + 1)
-    guess = int(input(f"Please guess a number between 1 and {highest}: "))
+    target_number = randint(1, highest + 1)
+    guessed_number = int(input(f"Please guess a number between 1 and {highest}: "))
     guess_count = 1
 
-    while guess != num and guess != 0:
-        if guess < num:
-            guess = int(input("Guess higher: "))
+    while guessed_number != target_number and guessed_number != 0:
+        if guessed_number < target_number:
+            guessed_number = int(input("Guess higher: "))
             guess_count += 1
-        elif guess > num:
-            guess = int(input("Guess lower: "))
+        elif guessed_number > target_number:
+            guessed_number = int(input("Guess lower: "))
             guess_count += 1
 
-    if guess == num:
+    if guessed_number == target_number:
         print(f"Well done! You guessed right in {guess_count} tries!")
-    elif guess == 0:
+    elif guessed_number == 0:
         print("You quit!")
 
 

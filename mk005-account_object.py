@@ -21,7 +21,10 @@ class Account:
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-            self.log.append((str(Account._current_time()), ("+" + str(amount), str(self.balance))))
+            self.log.append((
+                str(Account._current_time()),
+                ("+" + str(amount), str(self.balance))
+            ))
             print()
             print(f"{self.name}, {amount} is added to your account.")
             print(f"You have {self.balance} in your account.")
@@ -32,7 +35,10 @@ class Account:
     def withdraw(self, amount):
         if amount <= self.balance:
             self.balance -= amount
-            self.log.append((str(Account._current_time()), ("-" + str(amount), str(self.balance))))
+            self.log.append((
+                str(Account._current_time()),
+                ("-" + str(amount), str(self.balance))
+            ))
             print()
             print(f"{self.name}, {amount} is withdrawn from your account.")
             print(f"You have {self.balance} in your account.")
